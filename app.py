@@ -21,7 +21,7 @@ if __name__=="__main__":
 
         # model_trainer=ModelTrainer()
         # print(model_trainer.initiate_model_trainer(train_arr,test_arr))
-        a = 1/0
+        a = 1/00
         
     except Exception as e:
         logging.info("Custom Exception")
