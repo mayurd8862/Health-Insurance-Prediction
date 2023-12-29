@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Insurance Cost Prediction</title>
+</head>
+<body>
+    <div class="insurance-form">
+        <h1>Insurance Cost Prediction</h1>
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="number" name="age" placeholder="Enter your age" min="0" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sex</label>
+                <select class="form-control" name="sex" required>
+                    <option class="placeholder" selected disabled value="">Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">BMI</label>
+                <input class="form-control" type="number" name="bmi" placeholder="Enter your BMI" min="0" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Number of Children</label>
+                <input class="form-control" type="number" name="children" placeholder="Enter the number of children" min="0" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Smoker</label>
+                <select class="form-control" name="smoker" required>
+                    <option class="placeholder" selected disabled value="">Select if you smoke</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Region</label>
+                <select class="form-control" name="region" required>
+                    <option class="placeholder" selected disabled value="">Select your region</option>
+                    <option value="northeast">Northeast</option>
+                    <option value="northwest">Northwest</option>
+                    <option value="southeast">Southeast</option>
+                    <option value="southwest">Southwest</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict Insurance Cost" required />
+            </div>
+        </form>
+        <h2>
+            The predicted insurance cost is {{results}}
+        </h2>
+    </div>
+</body>
+</html>
