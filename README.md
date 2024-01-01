@@ -69,7 +69,7 @@ I'm a passionate learner with a strong interest in data science. I'm currently f
 
 ## 🔗 Links
 
-[Live Project](http://43.206.157.66:8080/)
+[Live Project](http://43.206.1570/)
 
 
 [![linkedin](https://www.linkedin.com/in/mayur-dabade-b527a9230)
