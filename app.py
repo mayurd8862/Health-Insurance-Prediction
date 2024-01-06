@@ -32,7 +32,7 @@ def predict_datapoint():
         return render_template('result.html', results="{:.2f}".format(results[0]), age=data.age, sex=data.sex, bmi=data.bmi, children=data.children, smoker=data.smoker, region=data.region)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+    app.run(host="0.0.0.0", port=8080,debug=True)
 
 
 # http://127.0.0.1:5000/
