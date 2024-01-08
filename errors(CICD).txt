@@ -1,0 +1,31 @@
+#### Errors occured in CI/CD pipelines
+Total time given for solving 2 errors = 2.5 hrs
+
+(1) error no 1
+
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+Error: Process completed with exit code 1.
+
+
+
+(2) error no 2
+
+Run docker pull "***/***:latest"
+  docker pull "***/***:latest"
+  shell: /usr/bin/bash -e {0}
+  env:
+    AWS_DEFAULT_REGION: ***
+    AWS_REGION: ***
+    AWS_ACCESS_KEY_ID: ***
+    AWS_SECRET_ACCESS_KEY: ***
+invalid reference format
+Error: Process completed with exit code 1.
+
+
+VVIMP
+"Try to update all secret keys" --->> Best solution for any error in CI/CD pipeline
