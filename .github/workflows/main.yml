@@ -48,20 +48,6 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
-      # - name: Build, tag, and push image to Amazon ECR
-      #   id: build-image
-      #   env:
-      #     ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-      #     ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
-      #     IMAGE_TAG: latest
-      #   run: |
-      #     # Build a docker container and
-      #     # push it to ECR so that it can
-      #     # be deployed to ECS.
-      #     docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-      #     docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-      #     echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
@@ -72,10 +58,9 @@ jobs:
           # Build a docker container and
           # push it to ECR so that it can
           # be deployed to ECS.
-          docker buildx build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-    
           
           
   Continuous-Deployment:
@@ -98,12 +83,11 @@ jobs:
       
       
       - name: Pull latest images
-        run: |
-         docker pull "${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest"
+        run: docker pull "${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest"
          
-      - name: Stop and remove  container if running
-        run: |
-         docker ps -q --filter "name=mltest" | grep -q . && docker stop mltest && docker rm -fv mltest
+      # - name: Stop and remove  container if running
+      #   run: |
+      #    docker ps -q --filter "name=mltest" | grep -q . && docker stop mltest && docker rm -fv mltest
        
       - name: Run Docker Image to serve users
         run: |
