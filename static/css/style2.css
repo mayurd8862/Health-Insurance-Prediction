@@ -75,7 +75,7 @@ form.sign-in-form {
   max-width: 380px;
   width: 100%;
   background-color: #f0f0f0;
-  margin: 8px 0;
+  margin: 10px 0;
   height: 48px;
   border-radius: 55px;
   display: grid;
@@ -137,13 +137,6 @@ form.sign-in-form {
 .social-media {
   display: flex;
   justify-content: center;
-}
-
-/* Media query for smaller screens (e.g., mobile devices) */
-@media screen and (max-width: 768px) {
-  .card {
-    width: 80%; /* Adjust the width based on your design */
-  }
 }
 
 .social-icon {
@@ -289,7 +282,6 @@ form.sign-in-form {
 
 .container.sign-up-mode .signin-signup {
   left: 25%;
-  margin-bottom: 1000px;
 }
 
 .container.sign-up-mode form.sign-up-form {
@@ -305,7 +297,6 @@ form.sign-in-form {
 .container.sign-up-mode .right-panel .image,
 .container.sign-up-mode .right-panel .content {
   transform: translateX(0%);
-  
 }
 
 .container.sign-up-mode .left-panel {
@@ -314,8 +305,6 @@ form.sign-in-form {
 
 .container.sign-up-mode .right-panel {
   pointer-events: all;
-  /* padding-top: 30px; */
-  /* margin-top: 40vh; */
 }
 
 @media (max-width: 870px) {
@@ -328,7 +317,6 @@ form.sign-in-form {
     top: 95%;
     transform: translate(-50%, -100%);
     transition: 1s 0.8s ease-in-out;
-    margin-bottom: 100px;
   }
 
   .signin-signup,
@@ -419,12 +407,6 @@ form.sign-in-form {
   .container.sign-up-mode .signin-signup {
     top: 5%;
     transform: translate(-50%, 0);
-  }
-
-  .container.sign-up-mode .right-panel {
-    /* pointer-events: all; */
-    /* padding-top: 30px; */
-    margin-top: 40vh;
   }
 }
 
@@ -534,7 +516,6 @@ form.sign-in-form {
   flex-direction: column;
   transition: .4s;
   position: relative;
-  margin-bottom: 5px;
 }
 
 .card:hover {
@@ -577,4 +558,16 @@ form.sign-in-form {
   text-align: justify;
   line-height: 1.5; /* Adjust line height as needed */
   margin-bottom: 10px; /* Add space after each li item */
+}
+
+
+.card__descr {
+  color: var(--font-color);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%; /* Adjust the width based on your design */
+  }
 }
