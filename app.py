@@ -12,6 +12,7 @@ app = application
 # Route for predicting data
 @app.route('/', methods=['GET', 'POST'])
 def predict_datapoint():
+    
     if request.method == 'GET':
         return render_template('result.html')
     else:
@@ -32,7 +33,8 @@ def predict_datapoint():
         return render_template('result.html', results="{:.2f}".format(results[0]), age=data.age, sex=data.sex, bmi=data.bmi, children=data.children, smoker=data.smoker, region=data.region)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=8080)
+
 
 
 
