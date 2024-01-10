@@ -1,4 +1,4 @@
-# MediSecure - Health Insurance Prediction Model
+# 🩺💊MediSecure - Health Insurance Prediction Model
 
 Welcome to MediSecure! 🚀 Where health meets certainty!! Explore tailored insurance solutions and optimize your coverage with the power of data-driven decisions.
 
@@ -11,23 +11,25 @@ Welcome to MediSecure! 🚀 Where health meets certainty!! Explore tailored insu
 - **Smoker**: Indicates whether the person is a smoker (e.g., Yes, No).
 - **Region**: The geographical region of the individual.
 
-## Prediction Target
+## 🎯Prediction Target
 
 - **charges**: The predicted cost for the health insurance.
 
 
 ## 🛠 Skills
-Python, Machine learning, AWS, Github Actions, Flask.
+Python, Machine learning, Flask, AWS, Github Actions, Docker.
 
 
-## How Project Works
+## 👷How Project Works
 
 The model takes in these information and crunches the numbers to provide an estimated cost. The project is structured with components such as data ingestion, data validation, data transformation, model training, and model evaluation. With Flask, the model is deployed, allowing users to interact with it through a user-friendly interface.
 
 
 ## Project Screenshots
 
+<img width="1018" alt="1" src="https://github.com/mayurd8862/Health-Insurance-Prediction/assets/113239727/6a1733c6-074c-4ba2-b020-0fba3a7e39c0">
 
+<img width="1027" alt="2" src="https://github.com/mayurd8862/Health-Insurance-Prediction/assets/113239727/44ab7d29-9104-41c5-95dd-042757b87bec">
 
 
 ## Get Started
@@ -40,7 +42,7 @@ Explore the `src` directory to dive into the main package files and check out th
 <!-- [Documentation](https://linktodocumentation) -->
 
 
-## Run Locally
+## 🏃🏻 Run Locally
 
 Clone the project
 
@@ -63,14 +65,16 @@ Start the server
   python app.py
 ```
 
+Go to browser and type
+
+```bash
+  http://localhost:8080/
+```
+
 ## 🚀 About Me
 I'm a passionate learner with a strong interest in data science. I'm currently focused on creating real-world projects using LLMs, transformers, and advanced machine learning techniques. I also have experience in web development, using Next.js, Django, and React to build data-driven web applications.
 
 
 ## 🔗 Links
-
-[Live Project](http://43.206.1570/)
-
-
-[![linkedin](https://www.linkedin.com/in/mayur-dabade-b527a9230)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayur-dabade-b527a9230)
 
