@@ -2,7 +2,7 @@
 
 Welcome to MediSecure! 🚀 Where health meets certainty!! Explore tailored insurance solutions and optimize your coverage with the power of data-driven decisions.
 
-## Features Overview
+## 🧐Features Overview
 
 - **Age**: The age of the individual.
 - **Gender**: Gender of the person (e.g., Male, Female).
@@ -20,7 +20,7 @@ Welcome to MediSecure! 🚀 Where health meets certainty!! Explore tailored insu
 Python, Machine learning, Flask, AWS, Github Actions, Docker.
 
 
-## 👷How Project Works
+## 👨‍💻How Project Works
 
 The model takes in these information and crunches the numbers to provide an estimated cost. The project is structured with components such as data ingestion, data validation, data transformation, model training, and model evaluation. With Flask, the model is deployed, allowing users to interact with it through a user-friendly interface.
 
@@ -37,7 +37,7 @@ The model takes in these information and crunches the numbers to provide an esti
 Explore the `src` directory to dive into the main package files and check out the various components. If you're interested in the nitty-gritty details, take a look at the data pipelines, entities, and configuration classes.
 
 
-## Documentation
+## 📑Documentation
 
 <!-- [Documentation](https://linktodocumentation) -->
 
